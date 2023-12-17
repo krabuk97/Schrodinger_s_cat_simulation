@@ -51,8 +51,6 @@ class Game:
 
             print("Wyniki symulacji kwantowej (|0⟩⟨0|):", qbit_results_0)
             print("Wyniki symulacji kwantowej (|1⟩⟨1|):", qbit_results_1)
-
-            # Ustawienie stanu kota na podstawie wyników symulacji
             self.cat_is_dead = qbit_results_0[-1] > qbit_results_1[-1]
             self.cat_is_alive = not self.cat_is_dead
 
